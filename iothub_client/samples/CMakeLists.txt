@@ -20,6 +20,8 @@ add_sample_directory(iothub_ll_client_x509_sample)
 add_sample_directory(iothub_ll_telemetry_sample)
 add_sample_directory(iotedge_downstream_device_sample)
 
+#add_sample_directory(iothub_ll_client_eis_x509_sample)
+
 if(${use_http})
     if(NOT ${dont_use_uploadtoblob})
         add_sample_directory(iothub_client_sample_upload_to_blob)

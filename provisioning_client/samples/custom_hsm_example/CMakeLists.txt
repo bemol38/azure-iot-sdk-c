@@ -19,8 +19,8 @@ IF(WIN32)
     add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 ELSE()
     # Make warning as error
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -pedantic -Wno-variadic-macros -fPIC")
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -pedantic -Wno-variadic-macros -fPIC")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -pedantic -Wno-overlength-strings -Wno-variadic-macros -fPIC")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -pedantic -Wno-overlength-strings -Wno-variadic-macros -fPIC")
 ENDIF(WIN32)
 
 add_library(custom_hsm_example ${source_files})

@@ -23,10 +23,10 @@
 //
 // The protocol you wish to use should be uncommented
 //
-#define SAMPLE_MQTT
+//#define SAMPLE_MQTT
 //#define SAMPLE_MQTT_OVER_WEBSOCKETS
 //#define SAMPLE_AMQP
-//#define SAMPLE_AMQP_OVER_WEBSOCKETS
+#define SAMPLE_AMQP_OVER_WEBSOCKETS
 //#define SAMPLE_HTTP
 
 #ifdef SAMPLE_MQTT
@@ -61,7 +61,7 @@ MU_DEFINE_ENUM_STRINGS_WITHOUT_INVALID(PROV_DEVICE_RESULT, PROV_DEVICE_RESULT_VA
 MU_DEFINE_ENUM_STRINGS_WITHOUT_INVALID(PROV_DEVICE_REG_STATUS, PROV_DEVICE_REG_STATUS_VALUES);
 
 static const char* global_prov_uri = "global.azure-devices-provisioning.net";
-static const char* id_scope = "[ID Scope]";
+static const char* id_scope = "0ne004E1AFC";
 
 volatile static bool g_registration_complete = false;
 static bool g_use_proxy = false;
